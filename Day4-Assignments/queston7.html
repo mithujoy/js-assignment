@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Assignment</title>
+    <script>
+     showPrimes(100);
+
+	 function showPrimes(limit) {
+	   for (let number = 2; number <= limit; number++)
+	     if (isPrime(number)) console.log(number);
+	 }
+
+	 function isPrime(number) {
+	   for (let factor = 2; factor < number; factor++)
+	     if (number % factor === 0)
+	       return false;
+
+	   return true;
+}
+    </script>
+</head>
+<body>
+    <h2>Day 4 Assignment</h2>
+    <p>Letsupgrade JavaScript</p>
+    <h3>Question 7</h3>
+    <p>
+    <pre>
+     An integer number greater than 1 is called a prime if it cannot be divided without a remainder by anything
+	 except 1 and itself.
+
+	 In other words, n > 1 is a prime if it can’t be evenly divided by anything except 1 and n.
+
+	 For example, 5 is a prime, because it cannot be divided without a remainder by 2, 3 and 4.
+
+	 Write the code which outputs prime numbers in the interval from 2 to n.
+
+	 For n = 10 the result will be 2,3,5,7.
+
+     P.S. The code should work for any n, not be hard-tuned for any fixed value
+    </pre>
+    </p>
+</body>
+</html>
